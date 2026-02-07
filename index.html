@@ -1,17 +1,152 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>ViDo Online Boutique</title>
+
+<style>
+
+body{
+font-family: Arial, sans-serif;
+background:#f4f4f4;
+margin:0;
+}
+
+header{
+background:#111;
+color:white;
+padding:25px;
+text-align:center;
+font-size:32px;
+letter-spacing:2px;
+}
+
+.products{
+display:grid;
+grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+gap:30px;
+padding:40px;
+max-width:1100px;
+margin:auto;
+}
+
+.product{
+background:white;
+padding:20px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+text-align:center;
+transition:0.3s;
+}
+
+.product:hover{
+transform:translateY(-5px);
+box-shadow:0 15px 35px rgba(0,0,0,0.15);
+}
+
+.product img{
+width:100%;
+border-radius:12px;
+margin-bottom:15px;
+}
+
+.price{
+font-size:20px;
+font-weight:bold;
+margin:10px 0;
+}
+
+button{
+background:black;
+color:white;
+border:none;
+padding:12px 20px;
+cursor:pointer;
+border-radius:8px;
+font-size:16px;
+}
+
+footer{
+background:#111;
+color:white;
+padding:40px;
+margin-top:50px;
+font-size:14px;
+}
+
+.footer-links{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+justify-content:center;
+margin-bottom:20px;
+}
+
+.footer-links a{
+color:white;
+text-decoration:none;
+}
+
+.footer-links a:hover{
+text-decoration:underline;
+}
+
+.footer-text{
+text-align:center;
+opacity:0.8;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+ViDo Online Boutique
+</header>
+
+<div class="products">
+
+<div class="product">
+<img src="https://picsum.photos/300/400?1">
+<h3>Kleid Elegant</h3>
+<div class="price">49 €</div>
+<button>Kaufen</button>
+</div>
+
+<div class="product">
+<img src="https://picsum.photos/300/400?2">
+<h3>Bluse Classic</h3>
+<div class="price">39 €</div>
+<button>Kaufen</button>
+</div>
+
+<div class="product">
+<img src="https://picsum.photos/300/400?3">
+<h3>Hoodie Oversize</h3>
+<div class="price">59 €</div>
+<button>Kaufen</button>
+</div>
+
+</div>
+
 <footer>
 
-  <div class="footer-links">
-    <a href="#">Impressum</a>
-    <a href="#">Datenschutz</a>
-    <a href="#">Widerruf</a>
-    <a href="#">AGB</a>
-    <a href="#">Versand & Zahlung</a>
-    <a href="#">Kontakt</a>
-  </div>
+<div class="footer-links">
+<a href="#">Impressum</a>
+<a href="#">Datenschutz</a>
+<a href="#">Widerruf</a>
+<a href="#">AGB</a>
+<a href="#">Versand & Zahlung</a>
+<a href="#">Kontakt</a>
+</div>
 
-  <div class="footer-text">
-    © 2026 ViDo Online Boutique<br>
-    Alle Preise inkl. gesetzlicher MwSt. zzgl. Versandkosten.
-  </div>
+<div class="footer-text">
+© 2026 ViDo Online Boutique<br>
+Alle Preise inkl. gesetzlicher MwSt. zzgl. Versandkosten.
+</div>
 
 </footer>
+
+</body>
+</html>
